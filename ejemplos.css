@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/**
+Elementos de la cabecera
+*/
+header {
+  background-color: #ff0000;
+}
+
+.btn-error {
+  background-color: #ff0000;
+}
+
+.container {
+  background-image: url("img.png");
+}
+
+/**
+Web desarrollada por: Iván Ortiz Posadas
+*/
+a {
+  color: #000000;
+  text-decoration: none;
+}
+a:hover {
+  color: #818181;
+}
+a:visited {
+  color: #0036ff;
+}
+a:active {
+  color: #00ff3a;
+}
+
+/*# sourceMappingURL=ejemplos.css.map */

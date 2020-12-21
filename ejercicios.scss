@@ -1,0 +1,61 @@
+//variables de colores
+$rojo: #ff0000;
+$cabecera-fondo: $rojo;
+$enlaces-normales: #000000;
+$enlaces-hover: #818181;
+$enlaces-visitados: #0036ff;
+$enlaces-activos: #00ff3a;
+
+/**
+Elementos de la cabecera
+*/
+header {
+  background-color: $cabecera-fondo;
+}
+
+// Tamaño para los iconos
+$sizes: (40px, 80px, 120px);
+
+// Breakpoints para la página
+$breakpoints: (
+  "pequeño": 576px,
+  "medio": 768px,
+  "grande": 992px,
+);
+
+//Interpolación en selectores
+$button-type: "error";
+$btn-color: #ff0000;
+
+.btn-#{$button-type} {
+  background-color: $btn-color;
+}
+
+//Interpolación en uso de funciones
+$fondo: "img.png";
+
+.container {
+  background-image: url("#{$fondo}");
+}
+
+//Interpolacion en comentarios
+$autor: "Iván Ortiz Posadas";
+
+/**
+Web desarrollada por: #{$autor}
+*/
+
+//Anidamiento básico
+a {
+  color: $enlaces-normales;
+  text-decoration: none;
+  &:hover {
+    color: $enlaces-hover;
+  }
+  &:visited {
+    color: $enlaces-visitados;
+  }
+  &:active {
+    color: $enlaces-activos;
+  }
+}
