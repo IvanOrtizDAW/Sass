@@ -1,0 +1,21 @@
+$light-tema: false;
+$dark-tema: false;
+
+$autor: "Iván Ortiz Posadas";
+
+/**
+Web desarrollada por: #{$autor}
+*/
+
+header {
+  @if $light-tema == true {
+    background-color: antiquewhite;
+    color: black;
+  } @else if $dark-tema {
+    background-color: black;
+    color: aliceblue;
+  } @else {
+    background-color: red;
+    color: white;
+  }
+}
