@@ -1,0 +1,15 @@
+$autor: "Iván Ortiz Posadas";
+
+/**
+Web desarrollada por: #{$autor}
+*/
+$num: 1;
+$lista-colores: (#be3b3b, #f5f510, #10f575, #1048f5);
+
+@while $num < 5 {
+  td:nth-child(#{$num}) {
+    color: black;
+    background-color: nth($lista-colores, $num);
+  }
+  $num: $num + 1;
+}
