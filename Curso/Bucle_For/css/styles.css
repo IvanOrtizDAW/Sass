@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+Web desarrollada por: Iván Ortiz Posadas
+*/
+p:nth-last-of-type(1) {
+  color: black;
+  background-color: #ff0f0f;
+}
+
+p:nth-last-of-type(2) {
+  color: black;
+  background-color: #33ff0f;
+}
+
+p:nth-last-of-type(3) {
+  color: black;
+  background-color: #0fb6ff;
+}
+
+/*# sourceMappingURL=styles.css.map */
