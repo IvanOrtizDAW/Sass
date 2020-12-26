@@ -1,0 +1,12 @@
+@function tamanio($hei, $wid) {
+  @return percentage($hei/$wid);
+}
+
+@function column-width($num) {
+  @return $num * 100% / 100;
+}
+
+.sidebar {
+  background-color: #00ffff;
+  width: column-width(50);
+}
