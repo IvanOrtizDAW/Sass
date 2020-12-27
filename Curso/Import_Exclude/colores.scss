@@ -1,0 +1,9 @@
+$naranja:orange;
+
+h1{
+color:$naranja;
+}
+
+p{
+  @extend h1;
+}
