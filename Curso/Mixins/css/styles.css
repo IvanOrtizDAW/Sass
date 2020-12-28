@@ -1,0 +1,18 @@
+h1 {
+  margin: 0px auto;
+  text-align: center;
+  padding: 6px;
+  margin: 3px;
+  color: black;
+}
+
+p {
+  color: purple;
+  margin: 0px auto;
+  text-align: center;
+  padding: 6px;
+  margin: 4px;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */

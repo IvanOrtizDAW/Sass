@@ -1,0 +1,21 @@
+@mixin centrado($radio: 6px, $margen) {
+  margin: 0px auto;
+  text-align: center;
+  padding: $radio;
+  margin: $margen;
+}
+
+h1 {
+  @include centrado($margen: 3px);
+  color: black;
+}
+
+@mixin parrafos($color, $subrayado) {
+  p {
+    color: $color;
+    @include centrado($margen: 4px);
+    text-decoration: $subrayado;
+  }
+}
+
+@include parrafos($color: purple, $subrayado: underline);
