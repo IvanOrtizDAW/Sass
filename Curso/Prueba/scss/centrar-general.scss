@@ -1,0 +1,26 @@
+////@access public
+////@author @Iván Ortiz Posadas
+
+/// Centrar dimensiones de la página
+///@group dimensiones
+$general-margin-padding: 0;
+
+///Dimensiones dle menu
+///@group dimensiones
+$main-container-width: 100%;
+
+* {
+  margin: $general-margin-padding;
+  padding: $general-margin-padding;
+}
+
+.container {
+  text-align: center;
+  width: $main-container-width;
+  margin: 0px auto;
+}
+
+///Mixin para centrar la tabla
+@mixin centrar-tabla {
+  margin: 30px auto;
+}

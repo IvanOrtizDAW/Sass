@@ -1,0 +1,31 @@
+////@access public
+////@author @Iván Ortiz Posadas
+
+///Colores generales
+///@group colores
+$color-fondo: #e2e2e2;
+$color-base: #3f3d3d;
+
+///Colores menú
+///@group colores
+$navbar-fondo-color: #5b0d22;
+$navbar-color-hover: $color-fondo;
+
+///Colores del borde
+///@group colores
+$border-color: $color-base;
+$border-style: "solid";
+$border-width: 0.2rem;
+$border-radius: 1rem;
+
+///Colores de los botones
+///@group colores
+$error: red;
+$normal: blue;
+$accepted: green;
+$warning: yellow;
+
+///Colores de la tabla
+///@group colores
+$color-impares: grey;
+$color-pares: #565656;

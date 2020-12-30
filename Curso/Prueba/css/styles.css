@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/**
+Web desarrollada por: Iván Ortiz Posadas
+*/
+@import "vendors/normalize.css";
+@import "vendors/font-awesome.min.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  margin: 0px auto;
+}
+
+nav {
+  background-color: #79132e;
+  padding: 2rem;
+  height: 30px;
+  max-width: 100%;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+nav ul li.active {
+  color: #e2e2e2;
+  font-weight: bolder;
+}
+nav ul li:hover {
+  color: #e2e2e2;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+figure.card {
+  border: 0.2rem solid #3f3d3d;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 1rem;
+  width: 35%;
+  margin: 20px;
+}
+figure.card img {
+  border-radius: 2rem;
+  width: 100%;
+}
+figure.card img:hover {
+  filter: contrast(125%) brightness(110%);
+}
+figure.card figcaption {
+  font-size: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+  color: #5b0d22;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 30px auto;
+}
+
+th,
+td {
+  border: solid black 2px;
+  padding: 1rem;
+}
+
+tbody tr td:nth-child(1) {
+  background-color: grey;
+}
+
+tbody tr td:nth-child(2) {
+  background-color: #565656;
+}
+
+tbody tr td:nth-child(3) {
+  background-color: grey;
+}
+
+tbody tr td:nth-child(4) {
+  background-color: #565656;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row > * {
+  border: solid black 1px;
+  height: 100px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px 10px;
+  border: black solid 3px;
+  width: 5%;
+  text-align: center;
+}
+.btn:hover {
+  box-shadow: black 5px 5px;
+}
+
+.btn-error {
+  background-color: red;
+}
+
+.btn-normal {
+  background-color: blue;
+}
+
+.btn-accepted {
+  background-color: green;
+}
+
+.btn-warning {
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=styles.css.map */

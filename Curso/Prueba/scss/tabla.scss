@@ -1,0 +1,41 @@
+////@access public
+////@author @Iván Ortiz Posadas
+
+table {
+  border-collapse: collapse;
+  @include centrar-tabla;
+}
+
+th,
+td {
+  border: solid black 2px;
+  padding: 1rem;
+}
+
+///Función que da colores a las columnas de la tabla
+///@param {integer} $columna Numero de columa para el color
+///@return {varchar} Tipo de color
+///@group colores
+@function color-tabla($columna) {
+  @if ($columna%2==0) {
+    @return $color-pares;
+  } @else {
+    @return $color-impares;
+  }
+}
+
+@for $v from 1 to 5 {
+  tbody tr td:nth-child(#{$v}) {
+    background-color: color-tabla($v);
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row > * {
+  border: solid black 1px;
+  height: 100px;
+}

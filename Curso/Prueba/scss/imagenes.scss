@@ -1,0 +1,28 @@
+////@access public
+////@author @Iván Ortiz Posadas
+
+/// Anchura del figure de las imagenes
+///@group figura
+$figure-width: 35%;
+
+figure.card {
+  border: $border-width#{$border-style}$border-color;
+  border-radius: $border-radius;
+  display: inline-block;
+  padding: 1rem;
+  width: $figure-width;
+  margin: 20px;
+  img {
+    border-radius: 2 * $border-radius;
+    width: 100%;
+    &:hover {
+      filter: contrast(125%) brightness(110%);
+    }
+  }
+  figcaption {
+    font-size: 1rem;
+    margin: 0.5rem;
+    text-align: center;
+    color: $navbar-fondo-color;
+  }
+}
